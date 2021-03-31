@@ -1,0 +1,16 @@
+Demo:
+
+
+
+<full-calendar
+  *ngIf="options"
+  #fullcalendar
+  [editable]="true"
+  [events]="eventsModel"
+  [header]="options.header"
+  [locale]="options.locale"
+  (dateClick)="dateClick($event)"
+  (eventDragStop)="eventDragStop($event)"
+  [plugins]="options.plugins"
+  (eventClick)="eventClick($event)"
+></full-calendar>
